@@ -25,6 +25,7 @@ class Request(db.Model):
             "m_status":self.m_status
         }
 
+
 class Employee(db.Model):
     id = db.Column(db.String(100), primary_key=True)
     password = db.Column(db.String(100), unique=False, nullable=False)
